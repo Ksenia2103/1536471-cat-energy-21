@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ксения Лапшакова](https://up.htmlacademy.ru/adaptive/21/user/1536471).
-* Наставник: `Неизвестно`.
+* Наставник: Ольга Юзич.
 
 ---
 
