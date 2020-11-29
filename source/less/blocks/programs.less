@@ -1,0 +1,117 @@
+.product-categories {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.programs__list {
+  list-style: none;
+}
+
+.programs__item {
+  background-color: @basic-grey;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+  padding-right: 33px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
+    padding-bottom: 57px;
+    padding-left: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 77px;
+    padding-bottom: 59px;
+    padding-right: 52px;
+  }
+}
+
+.programs__title {
+  margin: 0;
+  padding: 0;
+  margin-left: 91px;
+  margin-bottom: 29px;
+  font-size: 24px;
+  line-height: 37px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 214px;
+    margin-bottom: 73px;
+  }
+}
+
+.programs__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: @special-dark-grey;
+
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid @border_grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 52px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 27px;
+  }
+}
+
+.programs__link {
+  position: relative;
+  display: inline;
+  font-size: 16px;
+  line-height: 16px;
+  color: @basic-black;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  @media (max-width: @mobile-width-only) {
+    padding-top: 15px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.programs__item:not(:last-child) {
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    margin-right: 80px;
+  }
+}
