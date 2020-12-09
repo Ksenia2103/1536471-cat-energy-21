@@ -28,6 +28,22 @@
   }
 }
 
+.additional-offers__item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+
 .additional-offers__name {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -54,5 +70,12 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+.additional-offers__button {
+  @media (min-width: @desktop-width) {
+    width: 244px;
+    text-align: center;
   }
 }
