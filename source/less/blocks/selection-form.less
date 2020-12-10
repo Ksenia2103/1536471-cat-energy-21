@@ -1,50 +1,16 @@
 .selection-form__section {
   border: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
-.selection-form__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-
-  @media (min-width: @tablet-width) {
-    font-size: 36px;
-  }
-}
-
-.selection-form__input {
-  position: relative;
-  width: 100%;
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: @special-dark-grey;
-  text-transform: uppercase;
-  border: 1px solid @border_light_grey;
-  box-sizing: border-box;
-
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.selection-form__label {
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  color: @special-dark-grey;
-  text-transform: uppercase;
-
-  @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
+.selection-form__wrapper {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
@@ -54,9 +20,43 @@
   list-style: none;
 }
 
+.selection-form__list-contacts {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 67px;
+  }
+}
+
+.selection-form__list-programs {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+  }
+}
+
+.selection-form__list-optional {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 13px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 105px;
+  }
+}
+
 .selection-form__item {
   margin-bottom: 14px;
   display: flex;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;
@@ -91,6 +91,32 @@
   }
 }
 
+.selection-form__block-button {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 21px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 61px;
+    margin-top: 54px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 81px;
+    margin: 0;
+    margin-top: 61px;
+    margin-bottom: 82px;
+  }
+}
+
 .selection-form__legend {
   margin: 0;
   font-size: 14px;
@@ -99,15 +125,17 @@
   font-style: normal;
   font-weight: 400;
   color: @basic-black;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
+    text-align: left;
+    align-self: center;
   }
 }
 
 .selection-form__button {
   margin-top: 34px;
-  margin-bottom: 21px;
   padding: 7px 44px;
   font-size: 16px;
   line-height: 20px;
@@ -115,17 +143,63 @@
   font-style: normal;
   font-weight: 400;
   color: @basic-white;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     padding: 13px 45px;
-    margin-top: 54px;
-    margin-bottom: 72px;
+    margin: 0;
     font-size: 20px;
+    width: 282px;
   }
 
-  @media (min-width: @tablet-width) {
-    margin-top: 61px;
-    margin-bottom: 82px;
+  @media (min-width: @desktop-width) {
+    width: 568px;
     padding: 13px 188px;
+  }
+}
+
+.selection-form__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+  }
+}
+
+.selection-form__input {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: @special-dark-grey;
+  text-transform: uppercase;
+  border: 1px solid @border_light_grey;
+  box-sizing: border-box;
+  flex-grow: 1;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.selection-form__label {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: @special-dark-grey;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
