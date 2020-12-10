@@ -1,3 +1,23 @@
+.promo-offer {
+  position: relative;
+  background-color: @basic-green;
+  min-height: 289px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: right;
+    min-height: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 245px;
+    text-align: center;
+  }
+}
+
 .promo-offer__text {
   margin: 0;
   font-family: "Arial", "Verdana", sans-serif;
