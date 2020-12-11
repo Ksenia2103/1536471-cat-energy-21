@@ -24,6 +24,14 @@
   align-items: flex-start;
 
   @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    row-gap: 37px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
