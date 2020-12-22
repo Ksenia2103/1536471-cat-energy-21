@@ -3,26 +3,43 @@
   flex-wrap: wrap;
   justify-content: space-between;
   border: none;
-  min-height: 64px;
+  padding-top: 11px;
+  padding-bottom: 17px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 24px;
+    padding-top: 26px;
+    padding-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 53px;
+    padding-top: 55px;
   }
 }
 
 .page-header__logo {
-  padding-top: 11px;
-  padding-bottom: 20px;
-
   @media (min-width: @tablet-width) {
     padding: 0;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
+  }
+}
+
+.page-header__logo-image {
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.page-header__logo-text {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
