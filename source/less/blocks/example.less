@@ -71,8 +71,9 @@
   align-self: flex-start;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     margin-bottom: 63px;
-    margin-top: 43px;
+    //margin-top: 43px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -109,6 +110,7 @@
 
 .example__list {
   display: flex;
+  margin: 0;
   margin-bottom: 34px;
 
   @media (min-width: @tablet-width) {
@@ -226,6 +228,7 @@
 
 .example__image-before {
   @media (min-width: @tablet-width) {
+    margin-left: 20px;
     width: 334px;
     overflow: hidden;
   }
@@ -262,7 +265,13 @@
 
 .example__range-controls {
   margin-top: 25px;
-  padding-bottom: 23px;
+  padding-bottom: 43px;
   padding-left: 38px;
   padding-right: 38px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-bottom: 67px;
+  }
 }
