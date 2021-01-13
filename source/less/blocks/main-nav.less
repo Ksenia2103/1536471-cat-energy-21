@@ -40,6 +40,16 @@
   @media (min-width: @tablet-width) {
     background: none;
   }
+
+  @media (max-width: @mobile-width-only) {
+    &--closed .main-nav__list {
+      display: none;
+    }
+
+    &--nojs .main-nav__toggle {
+      display: none;
+    }
+  }
 }
 
 .main-nav__toggle {
@@ -124,6 +134,11 @@
     padding: 0;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.main-nav__link--white {
+  @media (min-width: @desktop-width) {
     color: @basic-white;
   }
 }

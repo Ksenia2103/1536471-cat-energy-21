@@ -10,21 +10,21 @@
 
 <header class="page-header page__container">
   <!--<div class="page-header__wrapper">-->
-  <a class="page-header__logo">
+  <a class="page-header__logo" href="index.html">
     <picture>
       <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
       <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
       <img class="page-header__logo-image" src="img/logo_mobile.svg" alt="Логотип Кэт энерджи">
     </picture>
   </a>
-  <nav class="main-nav main-nav--opened">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--active">
-          <a class="main-nav__link">Главная</a>
+          <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
@@ -69,37 +69,37 @@
           <legend class="selection-form__title visually-hidden">Программы</legend>
           <ul class="selection-form__list selection-form__list-programs">
             <li class="selection-form__item selection-form__item-radio">
+              <input class="selection-form__input-radio radio-field__input-active" type="radio" name="program-name" id="slim" checked>
               <label class="selection-form__label-programs selection-form__label-programs-active" for="slim">Похудение</label>
-              <input class="selection-form__input-radio radio-field__input-active" type="radio" name="program-name" id="slim">
-            </li>
+              </li>
             <li class="selection-form__item selection-form__item-radio">
-              <label class="selection-form__label-programs" for="fullness">Набор массы</label>
               <input class="selection-form__input-radio" type="radio" name="program-name" id="fullness">
+              <label class="selection-form__label-programs" for="fullness">Набор массы</label>
             </li>
             <li class="selection-form__item selection-form__item-radio">
-              <label class="selection-form__label-programs" for="recommendation">Не знаю (Нужен ваш совет)</label>
               <input class="selection-form__input-radio" type="radio" name="program-name" id="recommendation">
+              <label class="selection-form__label-programs" for="recommendation">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </div>
       </fieldset>
     </div>
     <fieldset class="selection-form__section selection-form__section-contact-details">
+      <legend class="selection-form__section-line selection-form__title selection-form__title-contact-details">
+        <span class="selection-form__title-text selection-form__title-text--small">Контактные данные (владельца кота)</span>
+      </legend>
       <div class="page__container">
-        <legend class="selection-form__title selection-form__title-contact-details legend">Контактные данные
-          (владельца кота)
-        </legend>
         <ul class="selection-form__list selection-form__list-contacts">
           <li class="selection-form__item selection-form__item-contacts">
             <label class="selection-form__label selection-form__label-email" for="email">E-mail:*</label>
-            <input class="selection-form__input selection-form__input-email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+            <input class="selection-form__input selection-form__input-email" type="email" name="email" id="email" required placeholder="kuklachev@gmail.com">
             <svg class="selection-form__icon-email" width="20" height="15">
               <use xlink:href="img/sprite.svg#icon-email"/>
             </svg>
           </li>
           <li class="selection-form__item selection-form__item-contacts">
             <label class="selection-form__label selection-form__label-number" for="tel-number">Телефон:*</label>
-            <input class="selection-form__input selection-form__input-number" type="tel" name="tel-number" id="tel-number" placeholder="8 (960) 900-60-90">
+            <input class="selection-form__input selection-form__input-number" type="tel" name="tel-number" id="tel-number" required placeholder="8 (960) 900-60-90">
             <svg class="selection-form__icon-phone" width="20" height="20">
               <use xlink:href="img/sprite.svg#icon-phone"></use>
             </svg>
@@ -108,18 +108,20 @@
       </div>
     </fieldset>
     <fieldset class="selection-form__section selection-form__section-comment">
+      <legend class="selection-form__section-line selection-form__title selection-form__title-comment">
+        <span class="selection-form__title-text">Комментарий</span>
+      </legend>
       <div class="page__container">
-          <legend class="selection-form__title selection-form__title-comment legend">Комментарий
-          </legend>
         <div class="selection-form__wrapper-text">
         <textarea class="selection-form__text" name="comment" id="textarea_box" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </div>
     </fieldset>
     <fieldset class="selection-form__section selection-form__section-optionally">
+      <legend class="selection-form__section-line selection-form__title selection-form__title-option">
+        <span class="selection-form__title-text">Дополнительно</span>
+      </legend>
       <div class="page__container">
-        <legend class="selection-form__title  selection-form__title-option legend">Дополнительно
-        </legend>
         <ul class="selection-form__list selection-form__list-optional">
           <li class="optionally__sweetener checkbox-field">
             <input class="visually-hidden selection-form__input-checkbox checkbox-field__input-active" type="checkbox" name="sweetener" id="sweetener" checked>
@@ -203,11 +205,12 @@
     <div class="page-footer__copyright copyright">
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <p class="copyright__text">HTML Academy</p>
-        <img class="copyright__logo" src="img/html academy.svg" width="27" height="34" alt="Логотип HTML Academy">
+        <img class="copyright__logo" src="img/html_academy.svg" width="27" height="34" alt="Логотип HTML Academy">
       </a>
     </div>
   </div>
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
