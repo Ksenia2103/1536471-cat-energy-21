@@ -50,6 +50,11 @@
     font-size: 20px;
     line-height: 21px;
   }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 5px;
+    line-height: 24px;
+  }
 }
 
 .contacts__address {
@@ -77,14 +82,46 @@
     font-size: 16px;
     line-height: 20px;
     justify-self: start;
+    text-align: left;
   }
 }
 
-.contacts__map-image {
+.contacts__map {
+  height: 362px;
+  overflow-x: hidden;
+  background-image: url("../img/location-mobile.jpg");
+  background-color: @basic-white;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/location-mobile@2x.jpg");
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+    background-image: url("../img/location-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/location-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-desktop@2x.jpg");
+    }
+  }
+}
+
+/*.contacts__map-image {
   width: 100%;
   display: block;
 
   @media (min-width: @tablet-width) {
     height: 400px;
   }
-}
+}*/
