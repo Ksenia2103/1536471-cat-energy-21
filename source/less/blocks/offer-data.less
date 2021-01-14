@@ -4,7 +4,8 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
-    width: 225px;
+    margin-top: 8px;
+    width: 238px;
   }
 
   @media (min-width: @desktop-width) {
@@ -15,4 +16,45 @@
 .offer-data__row {
   display: flex;
   justify-content: space-between;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.offer-data__name {
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.offer-data__name--interval {
+  @media (min-width: @tablet-width) {
+    margin-right: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.offer-data__sum {
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    text-transform: uppercase;
+    text-align: right;
+    //padding: 0;
+  }
 }
