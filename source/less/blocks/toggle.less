@@ -22,7 +22,15 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+  }
+
+  &:hover {
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  &:active {
+    border-bottom: none;
   }
 }
 
@@ -64,6 +72,10 @@
     background-color: @basic-white;
     box-sizing: border-box;
     margin-top: -15px;
+  }
+
+  &:active {
+    border-color: @basic-green;
   }
 }
 
