@@ -21,8 +21,10 @@
 }
 
 .page-header__logo {
-  width: 280px;
-  padding-bottom: 13px;
+  display: block;
+  margin: 0 auto;
+  transform: translateX(-45px);
+  padding-bottom: 9px;
 
   &:hover {
     opacity: 0.8;
@@ -36,6 +38,8 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     width: 174px;
+    margin: 0;
+    transform: translateX(0);
   }
 
   @media (min-width: @desktop-width) {

@@ -5,7 +5,7 @@
 
 .contacts__data {
   padding-top: 28px;
-  padding-bottom: 22px;
+  padding-bottom: 25px;
   background-color: @basic-white;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -14,7 +14,7 @@
     width: 625px;
     padding: 0;
     padding-top: 64px;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
     //padding-left: 41px;
     //padding-right: 42px;
     display: flex;
@@ -22,6 +22,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 60px;
     box-sizing: border-box;
     position: absolute;
     width: 570px;
@@ -38,7 +39,7 @@
   padding: 0;
   width: 140px;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -48,11 +49,12 @@
   @media (min-width: @tablet-width) {
     width: 171px;
     font-size: 20px;
-    line-height: 21px;
+    line-height: 24px; //24px;
+    padding-top: 3px;
   }
 
-  @media (min-width: @tablet-width) {
-    padding-top: 5px;
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
     line-height: 24px;
   }
 }

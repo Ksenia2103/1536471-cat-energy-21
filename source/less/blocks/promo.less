@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  min-height: 480px;
+  min-height: 475px;
   padding-top: 27px;
 
   &::before {
@@ -29,7 +29,7 @@
     @media (min-width: @desktop-width) {
       display: block;
       left: 50%;
-      top: -125px;
+      top: -121px;
       right: 0;
       bottom: 0;
       height: 694px;
@@ -88,7 +88,7 @@
   @media (min-width: @tablet-width) {
     background: none;
     min-height: 810px;
-    padding-top: 62px;
+    padding-top: 55px;
   }
 
   @media (min-width: @desktop-width) {
@@ -105,14 +105,14 @@
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    padding-left: 87px;
+    padding-left: 82px; //87px
     justify-content: start;
     box-sizing: border-box;
   }
 
-  /*@media (min-width: @desktop-width) {
-    padding-left: 0;
-  }*/
+  @media (min-width: @desktop-width) {
+    padding-left: 79px;
+  }
 }
 
 .promo__title {
@@ -132,6 +132,7 @@
     color: @basic-black;
     margin: 0;
     margin-bottom: 41px;
+    margin-left: 5px;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
@@ -141,10 +142,11 @@
   @media (min-width: @desktop-width) {
     color: @basic-black;
     margin-bottom: 40px;
+    margin-left: 0;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    padding-top: 79px;
+    padding-top: 70px;
   }
 }
 
@@ -159,6 +161,7 @@
   font-weight: 400;
   color: @basic-white;
   text-align: center;
+  margin-left: 5px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -175,6 +178,7 @@
     color: @basic-black;
     text-align: left;
     margin-bottom: 52px;
+    margin-left: 0;
   }
 }
 
@@ -185,12 +189,12 @@
   font-style: normal;
   font-weight: 400;
   position: absolute;
-  bottom: 25px; //0;
+  bottom: 20px; //0;
   align-items: center;
-  padding: 9px 44px;
+  padding: 11px 44px;
   box-sizing: border-box;
   width: 280px;
-  height: 40px;
+  height: 42px;
 
   @media (min-width: @tablet-width) {
     width: 244px;
@@ -199,7 +203,7 @@
     line-height: 20px;
     position: relative;
     text-align: center;
-    padding: 14px 26px;
+    padding: 17px 26px;
     bottom: 0;
   }
 }
