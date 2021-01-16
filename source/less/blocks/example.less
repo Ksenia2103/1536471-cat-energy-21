@@ -116,6 +116,7 @@
   color: @special-dark-grey;
 
   @media (min-width: @tablet-width) {
+    width: 677px;
     margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
@@ -199,7 +200,7 @@
     font-size: 14px;
     line-height: 14px;
     top: 62px;
-    left: 13px;
+    left: 15px;
     width: 127px;
   }
 
@@ -224,12 +225,12 @@
     width: 174px;
     position: absolute;
     right: 0;
-    bottom: 30px;
+    bottom: 21px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     left: 0;
     width: 327px;
     display: flex;
@@ -250,13 +251,15 @@
 
 .example__image-before {
   @media (min-width: @tablet-width) {
-    margin-left: 20px;
-    width: 334px;
+    margin-left: 25px;
+    width: 330px;
     overflow: hidden;
   }
 
   @media (min-width: @desktop-width) {
-    width: 361px;
+    width: 353px;
+    margin-left: 10px;
+    transform: translateY(-10px);
   }
 }
 
@@ -264,36 +267,48 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    width: 294px;
+    width: 308px;
     display: flex;
     flex-direction: row-reverse;
     overflow: hidden;
   }
 
   @media (min-width: @desktop-width) {
-    width: 265px;
+    width: 285px;
+    transform: translateY(-10px);
   }
 }
 
 .example__slider-image {
   height: 232px;
+  max-width: none;
+  transform: translateX(-20px);
 
   @media (min-width: @tablet-width) {
     max-width: none;
     width: auto;
-    height: 512px;
+    height: 522px;
+    transform: translateX(-10px) translateY(10px);
   }
 }
 
 .example__range-controls {
   margin-top: 25px;
-  padding-bottom: 43px;
+  padding-bottom: 37px;
   padding-left: 38px;
   padding-right: 38px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 15px;
     padding-left: 58px;
     padding-right: 58px;
-    padding-bottom: 67px;
+    padding-bottom: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 25px;
+    padding-left: 58px;
+    padding-right: 10px;
+    padding-bottom: 69px;
   }
 }
