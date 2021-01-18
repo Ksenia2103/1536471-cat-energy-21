@@ -1,12 +1,16 @@
 .contacts {
   position: relative;
-  background-color: @basic-white;
+  background-color: @basic-grey;
+
+  @media (min-width: @desktop-width) {
+    background-color: @basic-white;
+  }
 }
 
 .contacts__data {
   padding-top: 28px;
   padding-bottom: 25px;
-  background-color: @basic-white;
+  //background-color: @basic-grey;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
@@ -31,6 +35,7 @@
     left: 110px;
     padding-left: 76px;
     padding-right: 89px;
+    background-color: @basic-white;
   }
 }
 
