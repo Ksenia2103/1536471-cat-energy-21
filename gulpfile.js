@@ -145,6 +145,8 @@ const reload = done => {
   done();
 }
 
+exports.reload = reload;
+
 // Build
 
 const build =
@@ -161,7 +163,6 @@ const build =
     ));
 
 exports.build = build;
-
 
 // Default
 
