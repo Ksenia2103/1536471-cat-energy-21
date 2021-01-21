@@ -7,6 +7,10 @@
   }
 }
 
+.contacts--main {
+  background-color: @basic-white;
+}
+
 .contacts__data {
   padding-top: 28px;
   padding-bottom: 25px;
@@ -93,15 +97,15 @@
   }
 }
 
-.contacts__address br {
-  @media (max-width: @mobile-width-only) {
-    display: none;
+.contacts__city {
+  @media (min-width: @tablet-width) {
+    display: block;
+    padding-top: 20px;
   }
 }
 
 .contacts__map {
   height: 362px;
-  overflow-x: hidden;
   background-image: url("../img/location-mobile.jpg");
   background-color: @basic-white;
   background-repeat: no-repeat;

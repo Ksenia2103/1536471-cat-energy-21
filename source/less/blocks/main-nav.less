@@ -7,8 +7,8 @@
   &--closed .main-nav__toggle::before {
     content: "";
     position: absolute;
-    top: 2px;
-    left: 18px;
+    top: -3px;
+    left: -1px;
     width: 24px;
     height: 1.5px;
     background-color: @basic-black;
@@ -20,8 +20,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 6px;
-      left: 21px;
+      top: 5px;
+      left: 3px;
       width: 24px;
       height: 1.5px;
       background-color: @basic-black;
@@ -52,13 +52,19 @@
   }
 }
 
+.main-nav--nojs .main-nav__toggle {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
 .main-nav__toggle {
   margin: 0;
   padding: 0;
   position: absolute;
   display: block;
-  top: -45px;
-  right: -20px;
+  top: -40px;
+  right: -40px;
   width: 18px;
   height: 18px;
   background-color: @basic-white;
@@ -73,9 +79,9 @@
     display: none;
   }
 
-  &:focus {
+  /*&:focus {
     outline: 0;
-  }
+  }*/
 }
 
 .main-nav__list {

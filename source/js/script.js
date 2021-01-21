@@ -11,3 +11,21 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+
+// скрипт для валидации формы при отправке
+let selectionForm = document.querySelector(".selection-form");
+let selectionFormField = document.querySelectorAll(".selection-form__input");
+
+if(selectionForm) {
+  selectionForm.addEventListener("submit", function (evt) {
+    for (let i=0; i<=4; i++) {
+      if (!selectionFormField[i].value) {
+        evt.preventDefault();
+        selectionFormField[i].classList.add("selection-form__input--error");
+      } else {
+        selectionFormField[i].classList.remove("selection-form__input--error");
+      }
+    }
+  })
+}
