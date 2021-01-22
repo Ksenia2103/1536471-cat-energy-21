@@ -625,9 +625,9 @@
 }
 
 .selection-form__input-radio {
-  display: none;
+  //display: none;
 
-  & + .selection-form__label-programs::after {
+  &:checked + .selection-form__label-programs::after {
     position: absolute;
     top: -5px;
     left: 8px;
@@ -638,7 +638,8 @@
     border: 1px solid @basic-green;
     border-radius: 50%;
     background-color: @basic-green;
-    display: none;
+    //display: none;
+    display: block;
 
     @media (min-width: @tablet-width) {
       position: absolute;
@@ -651,20 +652,20 @@
       border: 1px solid @basic-green;
       border-radius: 50%;
       background-color: @basic-green;
-      display: none;
+      //display: none;
     }
   }
 
-  &:checked + .selection-form__label-programs::after {
+  /*&:checked + .selection-form__label-programs::after {
     display: block;
-  }
+  }*/
 
   &:disabled + .selection-form__label-programs {
     opacity: 0.3;
   }
 
   &:hover + .selection-form__label-programs::before {
-    border-color: @border_disabled;
+    border-color: @border_special_grey;
   }
 }
 
@@ -711,7 +712,7 @@
   }
 
   &:hover + .selection-form__label-checkbox::before {
-    border-color: @border_disabled;
+    border-color: @border_special_grey;
   }
 }
 

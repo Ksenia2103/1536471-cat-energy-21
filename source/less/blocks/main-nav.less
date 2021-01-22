@@ -7,8 +7,8 @@
   &--closed .main-nav__toggle::before {
     content: "";
     position: absolute;
-    top: -3px;
-    left: -1px;
+    top: 2px;
+    left: -6px;
     width: 24px;
     height: 1.5px;
     background-color: @basic-black;
@@ -20,8 +20,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 5px;
-      left: 3px;
+      top: 10px;
+      left: -3px;
       width: 24px;
       height: 1.5px;
       background-color: @basic-black;
@@ -63,8 +63,8 @@
   padding: 0;
   position: absolute;
   display: block;
-  top: -40px;
-  right: -40px;
+  top: -45px;
+  right: 20px;
   width: 18px;
   height: 18px;
   background-color: @basic-white;
@@ -182,27 +182,6 @@
   @media (min-width: @tablet-width) {
     &::before {
       display: block;
-    }
-  }
-}
-
-.site-nav-menu__item--current {
-  position: relative;
-  display: block;
-
-  @media (min-width: @tablet-width) {
-    ::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: @basic-green;
-      bottom: -10px;
-      left: 0;
-
-      @media (min-width: @desktop-width) {
-        background-color: @basic-white;
-      }
     }
   }
 }

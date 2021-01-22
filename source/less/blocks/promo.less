@@ -18,6 +18,10 @@
     background-repeat: no-repeat no-repeat;
     background-position: center;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-mobile@2x.jpg");
+    }
+
     @media (max-width: @mobile-width-only) {
       width: 100%;
     }
@@ -38,6 +42,10 @@
       background-color: @promo_color;
       background-size: cover;
       background-position: left;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/background-desktop@2x.jpg");
+      }
     }
   }
 

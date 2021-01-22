@@ -20,10 +20,27 @@
   }
 }
 
+.page-header--wrapper {
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid @border_prelight_grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .page-header__logo {
   display: block;
   margin: 0 auto;
-  transform: translateX(-45px);
+  width: 280px;
+  padding: 0 20px;
   padding-bottom: 9px;
 
   &:hover {
@@ -39,7 +56,6 @@
     padding: 0;
     width: 174px;
     margin: 0;
-    transform: translateX(0);
   }
 
   @media (min-width: @desktop-width) {
